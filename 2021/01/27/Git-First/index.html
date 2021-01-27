@@ -23,20 +23,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"ssungs.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="Git 시작하기Git 설치하기sudo apt-get install git 설치 후 git –version 으로 설치 확인 설정하기git config –gloval user.name “{github ID}”git config –gloval user.email “{github email}”git config –global core.editor “vim” &amp;lt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://ssungs.github.io/2021/01/27/hello-world/index.html">
+<meta property="og:title" content="Git_First">
+<meta property="og:url" content="https://ssungs.github.io/2021/01/27/Git-First/index.html">
 <meta property="og:site_name" content="Ssungs Dev Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Git 시작하기Git 설치하기sudo apt-get install git 설치 후 git –version 으로 설치 확인 설정하기git config –gloval user.name “{github ID}”git config –gloval user.email “{github email}”git config –global core.editor “vim” &amp;lt">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-27T02:33:19.752Z">
-<meta property="article:modified_time" content="2021-01-27T02:33:19.752Z">
+<meta property="article:published_time" content="2021-01-27T03:13:20.000Z">
+<meta property="article:modified_time" content="2021-01-27T03:14:51.461Z">
 <meta property="article:author" content="ssungs">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://ssungs.github.io/2021/01/27/hello-world/">
+<link rel="canonical" href="https://ssungs.github.io/2021/01/27/Git-First/">
 
 
 <script class="page-configurations">
@@ -48,7 +48,7 @@
     lang   : 'en'
   };
 </script>
-<title>Hello World | Ssungs Dev Blog</title>
+<title>Git_First | Ssungs Dev Blog</title>
   
 
 
@@ -148,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0"><span class="nav-number">1.</span> <span class="nav-text">Git 시작하기</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0"><span class="nav-number">1.1.</span> <span class="nav-text">Git 설치하기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0"><span class="nav-number">1.2.</span> <span class="nav-text">설정하기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github%EC%97%90-commit%ED%95%B4%EB%B3%B4%EA%B8%B0-%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%B0%A9%EB%B2%95"><span class="nav-number">1.3.</span> <span class="nav-text">Github에 commit해보기(첫번째 방법)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#commit-%ED%95%98%EA%B8%B0-2%EB%B2%88%EC%A7%B8-%EB%B0%A9%EB%B2%95"><span class="nav-number">1.4.</span> <span class="nav-text">commit 하기 (2번째 방법)</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -201,7 +201,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://ssungs.github.io/2021/01/27/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://ssungs.github.io/2021/01/27/Git-First/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -214,7 +214,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          Git_First
         </h1>
 
         <div class="post-meta-container">
@@ -224,8 +224,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2021-01-27 11:33:19" itemprop="dateCreated datePublished" datetime="2021-01-27T11:33:19+09:00">2021-01-27</time>
+      <time title="Created: 2021-01-27 12:13:20 / Modified: 12:14:51" itemprop="dateCreated datePublished" datetime="2021-01-27T12:13:20+09:00">2021-01-27</time>
     </span>
 
   
@@ -238,15 +239,67 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="Git-시작하기"><a href="#Git-시작하기" class="headerlink" title="Git 시작하기"></a>Git 시작하기</h1><h2 id="Git-설치하기"><a href="#Git-설치하기" class="headerlink" title="Git 설치하기"></a>Git 설치하기</h2><p>sudo apt-get install git</p>
+<p>설치 후</p>
+<p>git –version 으로 설치 확인</p>
+<h2 id="설정하기"><a href="#설정하기" class="headerlink" title="설정하기"></a>설정하기</h2><p>git config –gloval user.name “{github ID}”<br>git config –gloval user.email “{github email}”<br>git config –global core.editor “vim” &lt;– 사용하는 편집기로 수정<br>git config –global core.pager “cat”</p>
+<h2 id="Github에-commit해보기-첫번째-방법"><a href="#Github에-commit해보기-첫번째-방법" class="headerlink" title="Github에 commit해보기(첫번째 방법)"></a>Github에 commit해보기(첫번째 방법)</h2><ol>
+<li><p>디렉토리를 만들고 폴더로 이동한다.</p>
+<p>mkdir 폴더이름 &amp;&amp; cd 폴더이름</p>
+</li>
+<li><p>Git으로 연결하기.</p>
+<p>git init</p>
+</li>
+<li><p>Git remote 하기.</p>
+<p>git remote add origin <a target="_blank" rel="noopener" href="http://github.com/%7Busername%7D/%7B%ED%8F%B4%EB%8D%94%EC%9D%B4%EB%A6%84%7D.git">http://github.com/{username}/{폴더이름}.git</a></p>
+</li>
+<li><p>commit할 파일 만들기.</p>
+<p>touch 파일이름.md (md:markdown)</p>
+</li>
+<li><p>파일을 vim으로 수정하기</p>
+<p>vi 파일이름 으로 vim 으로 들어가서 i 를 누르게 되면 수정가능한 화면으로 전환되고 내용을 적는다.</p>
+<p>내용 작성이 끝나면 esc를 누르고 :wq 를 눌러 저장한다.</p>
+</li>
+<li><p>확인하기.</p>
+<p>git status 로 확인하기</p>
+</li>
+<li><p>Git에 add하기.</p>
+<p>git add 파일이름</p>
+<p>vim이 뜨는데 첫줄에는 일종의 제목으로 글의 type을 적어준다.</p>
+<p>아래줄부터는 글 작성 또는 변경사항을 적어준다.</p>
+</li>
+<li><p>확인하기</p>
+<p>6번과 동일</p>
+</li>
+<li><p>commit하기</p>
+<p>git commit -m “파일이름”</p>
+</li>
+<li><p>확인하기</p>
+<p>6번과 동일</p>
+</li>
+<li><p>push하기</p>
+<p>git push -u origin master</p>
+</li>
+</ol>
+<h2 id="commit-하기-2번째-방법"><a href="#commit-하기-2번째-방법" class="headerlink" title="commit 하기 (2번째 방법)"></a>commit 하기 (2번째 방법)</h2><ol>
+<li><p>Github 홈페이지에서 저장소를 생성합니다.</p>
+<p>저장소 주소를 복사합니다.</p>
+</li>
+<li><p>Github clone 하기</p>
+<p>git clone 복사한 저장소 주소</p>
+</li>
+<li><p>작성한 파일 add하기</p>
+<p>git add 파일이름</p>
+</li>
+<li><p>확인하기</p>
+</li>
+<li><p>commit 하기</p>
+<p>git commit</p>
+</li>
+<li><p>push하기</p>
+<p>git push</p>
+</li>
+</ol>
 
     </div>
 
@@ -260,14 +313,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/01/22/Git-start/" rel="prev" title="Git start">
-                  <i class="fa fa-chevron-left"></i> Git start
+                <a href="/2021/01/27/Python-First/" rel="prev" title="">
+                  <i class="fa fa-chevron-left"></i> 
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/01/27/Python-First/" rel="next" title="">
-                   <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
