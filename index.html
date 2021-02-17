@@ -156,12 +156,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -199,6 +199,161 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://ssungs.github.io/2021/02/07/Dictionary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ssungs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ssungs Dev Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/02/07/Dictionary/" class="post-title-link" itemprop="url">Python Dictionary</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-02-07 10:46:42 / Modified: 10:52:38" itemprop="dateCreated datePublished" datetime="2021-02-07T10:46:42+09:00">2021-02-07</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="딕셔너리"><a href="#딕셔너리" class="headerlink" title="딕셔너리"></a>딕셔너리</h1><p>Key 값과 Value 값을 하나의 값으로 가지는 자료형</p>
+<p>리스트나 튜플과는 다르게 요솟값의 순서가 없음</p>
+<p>Key 값을 해쉬 (잘게 부숨) 해서 나온 값에 Value 값을 저장하는 방식이기 때문</p>
+<p>빈 딕셔너리는 변수 = {} 로 만듦</p>
+<p>dic = {key:value, key:value, key:value, …} 의 모양을 가짐</p>
+<p>Value 에는 리스트 사용 가능</p>
+<h2 id="딕셔너리-쌍-추가-삭제하기"><a href="#딕셔너리-쌍-추가-삭제하기" class="headerlink" title="딕셔너리 쌍 추가, 삭제하기"></a>딕셔너리 쌍 추가, 삭제하기</h2><h3 id="딕셔너리-쌍-추가하기"><a href="#딕셔너리-쌍-추가하기" class="headerlink" title="딕셔너리 쌍 추가하기"></a>딕셔너리 쌍 추가하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; &#123;&#125;    # 빈 딕셔너리 설정</span><br><span class="line">a &#x3D; &#123;1:&#39;a&#39;&#125;         # 변수 &#x3D; &#123;key:value&#125; 형태로 추가 가능</span><br><span class="line">a[2] &#x3D; &#39;b&#39;          # 변수[key] &#x3D; value 형태로 추가 가능</span><br><span class="line">a</span><br><span class="line">&gt;&gt;&#123;1: &#39;a&#39;,2: &#39;b&#39;&#125;</span><br><span class="line">a[&#39;name&#39;] &#x3D; &#39;kim&#39;    # key 값으로 문자열도 사용 가능</span><br><span class="line">a</span><br><span class="line">&gt;&gt;&#123;1: &#39;a&#39;, 2: &#39;b&#39;, &#39;name&#39;: &#39;kim&#39;&#125;</span><br><span class="line">a[3] &#x3D; [1, 2, 3]    # value 값에 리스트 추가 가능</span><br><span class="line">a</span><br><span class="line">&gt;&gt;&#123;1: &#39;a&#39;, 2: &#39;b&#39;, &#39;name&#39;: &#39;kim&#39;, 3: [1, 2, 3]&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="딕셔너리-요소-삭제하기"><a href="#딕셔너리-요소-삭제하기" class="headerlink" title="딕셔너리 요소 삭제하기"></a>딕셔너리 요소 삭제하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">del a[1]           # 변수[key값] 으로 key 와 value 를 삭제</span><br><span class="line">a</span><br><span class="line">&gt;&gt;&#123;2: &#39;b&#39;, &#39;name&#39;: &#39;kim&#39;, 3: [1, 2, 3]&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="딕셔너리에서-key값을-사용해-value값-얻기"><a href="#딕셔너리에서-key값을-사용해-value값-얻기" class="headerlink" title="딕셔너리에서 key값을 사용해 value값 얻기"></a>딕셔너리에서 key값을 사용해 value값 얻기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a[&#39;name&#39;]        # 변수[key값]을 이용하여 해당 key 값의 value 값을 출력</span><br><span class="line">&gt;&gt;&#39;kim&#39;</span><br><span class="line">a[3]</span><br><span class="line">&gt;&gt;[1, 2, 3]</span><br></pre></td></tr></table></figure>
+<h3 id="딕셔너리-만들-때-주의-사항"><a href="#딕셔너리-만들-때-주의-사항" class="headerlink" title="딕셔너리 만들 때 주의 사항"></a>딕셔너리 만들 때 주의 사항</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">b &#x3D; &#123;1:&#39;a&#39;, 1:&#39;b&#39;&#125;</span><br><span class="line">b            # key값은 고유한 값으로 중복된 key값으로 설정한 value값은 무시</span><br><span class="line">&gt;&gt;&#123;1: &#39;b&#39;&#125;</span><br><span class="line">c &#x3D; &#123;[1, 2]:&#39;a&#39;&#125;   # key값으로 리스트는 불가능</span><br><span class="line">&gt;&gt;TypeError</span><br></pre></td></tr></table></figure>
+<h2 id="딕셔너리-관련-함수들"><a href="#딕셔너리-관련-함수들" class="headerlink" title="딕셔너리 관련 함수들"></a>딕셔너리 관련 함수들</h2><h3 id="key-리스트-만들기"><a href="#key-리스트-만들기" class="headerlink" title="key 리스트 만들기"></a>key 리스트 만들기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d &#x3D; &#123;&#39;name&#39;:&#39;kim&#39;, &#39;phone&#39;:&#39;01011112222&#39;, &#39;age&#39;:&#39;30&#39;&#125;</span><br><span class="line">[200~d.keys()   # 변수.keys() 로 key값만 모아서 dict_keys 객체를 반환</span><br><span class="line">&gt;&gt;dict_keys([&#39;name&#39;, &#39;phone&#39;, &#39;age&#39;])</span><br></pre></td></tr></table></figure>
+<h3 id="value-리스트-만들기"><a href="#value-리스트-만들기" class="headerlink" title="value 리스트 만들기"></a>value 리스트 만들기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.values()  # 변수.values() 로 value값만 모아서 dict_values 객체를 반환</span><br><span class="line">&gt;&gt;dict_values([&#39;kim&#39;, &#39;01011112222&#39;, &#39;30&#39;])</span><br></pre></td></tr></table></figure>
+<h3 id="key-value-쌍으로-값-얻기"><a href="#key-value-쌍으로-값-얻기" class="headerlink" title="key, value 쌍으로 값 얻기"></a>key, value 쌍으로 값 얻기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.items()  # 변수.items() 로 key값과 value값을 튜플로 dict_items 객체로 반환</span><br><span class="line">&gt;&gt;dict_items([(&#39;name&#39;, &#39;kim&#39;), (&#39;phone&#39;, &#39;01011112222&#39;), (&#39;age&#39;, &#39;30&#39;)])</span><br></pre></td></tr></table></figure>
+<h3 id="keys-values-items-리스트로-반환하기"><a href="#keys-values-items-리스트로-반환하기" class="headerlink" title="keys, values, items 리스트로 반환하기"></a>keys, values, items 리스트로 반환하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">list(d.keys())  # 변수.keys() 로 key값을 list로 묶음</span><br><span class="line">&gt;&gt;[&#39;name&#39;, &#39;phone&#39;, &#39;age&#39;]</span><br><span class="line">list(d.values())  # 변수.values() 로 value값을 list로 묶음</span><br><span class="line">&gt;&gt;[&#39;kim&#39;, &#39;01011112222&#39;, &#39;30&#39;]</span><br><span class="line">list(d.items())  # 변수.items() 로 item값을 list로 묶음</span><br><span class="line">&gt;&gt;[(&#39;name&#39;, &#39;kim&#39;), (&#39;phone&#39;, &#39;01011112222&#39;), (&#39;age&#39;, &#39;30&#39;)]</span><br></pre></td></tr></table></figure>
+<h3 id="key로-value얻기"><a href="#key로-value얻기" class="headerlink" title="key로 value얻기"></a>key로 value얻기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">d.get(&#39;name&#39;)    # 변수.get(key값) 으로 key에 대응되는 value를 반환</span><br><span class="line">&gt;&gt;&#39;kim&#39;</span><br><span class="line">print(d.get(&#39;tall&#39;))   # get으로 없는 value값을 호출 할때 none 출력 (거짓)</span><br><span class="line">&gt;&gt;None</span><br><span class="line">print(d[&#39;tall&#39;])       # 일반 key값으로 value로 없는 값을 호출 할때 오류발생</span><br><span class="line">&gt;&gt;KeyError</span><br><span class="line">d.get(&#39;tall&#39;, &#39;180&#39;) # 딕셔너리 안에 key값이 없는 경우 미리 정해둔 디폴트 값을 대신 가져옴</span><br><span class="line">&gt;&gt;&#39;180&#39;</span><br></pre></td></tr></table></figure>
+<h3 id="key값이-딕셔너리-안에-있는지-조사하기"><a href="#key값이-딕셔너리-안에-있는지-조사하기" class="headerlink" title="key값이 딕셔너리 안에 있는지 조사하기"></a>key값이 딕셔너리 안에 있는지 조사하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#39;name&#39; in d    # key값이 딕셔너리 안에 있는 경우 True 출력</span><br><span class="line">&gt;&gt;True</span><br><span class="line">&#39;tall&#39; in d   # key값이 딕셔너리 안에 없는 경우 False 출력</span><br><span class="line">&gt;&gt;False</span><br></pre></td></tr></table></figure>
+<h3 id="key-value-쌍-모두-지우기"><a href="#key-value-쌍-모두-지우기" class="headerlink" title="key, value 쌍 모두 지우기"></a>key, value 쌍 모두 지우기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d.clear()</span><br><span class="line">d             # 변수.clear() 로 변수안에 딕셔너리 값들을 모두 지움</span><br><span class="line">&gt;&gt;&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://ssungs.github.io/2021/02/07/Tuple/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ssungs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ssungs Dev Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/02/07/Tuple/" class="post-title-link" itemprop="url">Python Tuple</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-02-07 10:22:15 / Modified: 10:43:11" itemprop="dateCreated datePublished" datetime="2021-02-07T10:22:15+09:00">2021-02-07</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="튜플"><a href="#튜플" class="headerlink" title="튜플"></a>튜플</h1><p>튜플은 소괄호(( ))로 감싸고 있고 쉼표( , )로 나눔</p>
+<p>튜플내의 요솟값들은 수정, 삭제, 생성 이 불가능</p>
+<p>튜플내의 요솟값이 한개만 존재할때도 요솟값뒤에 쉼표( , )를 붙여줌</p>
+<p>튜플내의 요솟값은 소괄호(( ))를 생략해서도 사용 가능</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">t1 &#x3D; (1, 2, &#39;a&#39;, &#39;b&#39;)</span><br><span class="line">t2 &#x3D; (3, 4)</span><br><span class="line">del t1[0]         # 삭제 불가능</span><br><span class="line">&gt;&gt;TypeError</span><br><span class="line">t1[0] &#x3D; 3       # 변경 불가능</span><br><span class="line">&gt;&gt;TypeError</span><br></pre></td></tr></table></figure>
+<h2 id="튜플-다루기"><a href="#튜플-다루기" class="headerlink" title="튜플 다루기"></a>튜플 다루기</h2><h3 id="인덱싱하기"><a href="#인덱싱하기" class="headerlink" title="인덱싱하기"></a>인덱싱하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">t1[1]       # 리스트의 인덱싱과 동일</span><br><span class="line">&gt;&gt;2</span><br><span class="line">t1[-1]</span><br><span class="line">&gt;&gt;&#39;b&#39;</span><br></pre></td></tr></table></figure>
+<h3 id="슬라이싱하기"><a href="#슬라이싱하기" class="headerlink" title="슬라이싱하기"></a>슬라이싱하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">t1[2:]      # 리스트의 슬라이싱과 동일</span><br><span class="line">&gt;&gt;(&#39;a&#39;, &#39;b&#39;)</span><br><span class="line">t1[:3]</span><br><span class="line">&gt;&gt;(1, 2, &#39;a&#39;)</span><br></pre></td></tr></table></figure>
+<h3 id="튜플-더하기"><a href="#튜플-더하기" class="headerlink" title="튜플 더하기"></a>튜플 더하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">t1 + t2    # 단순하게 뒤에 더한 값이 뒤에 붙음</span><br><span class="line">&gt;&gt;(1, 2, &#39;a&#39;, &#39;b&#39;, 3, 4)</span><br></pre></td></tr></table></figure>
+<h3 id="튜플-곱하기"><a href="#튜플-곱하기" class="headerlink" title="튜플 곱하기"></a>튜플 곱하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">t2 * 5    # t2 의 내용이 * 뒤의 숫자만큼 곱해짐</span><br><span class="line">&gt;&gt;(3, 4, 3, 4, 3, 4, 3, 4, 3, 4)</span><br></pre></td></tr></table></figure>
+<h3 id="튜플-길이-구하기"><a href="#튜플-길이-구하기" class="headerlink" title="튜플 길이 구하기"></a>튜플 길이 구하기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">len(t1)  # t1 안의 요솟값 갯수 또는 길이를 출력</span><br><span class="line">&gt;&gt;4</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://ssungs.github.io/2021/01/28/List-Python/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -212,7 +367,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/28/List-Python/" class="post-title-link" itemprop="url">List_Python</a>
+          <a href="/2021/01/28/List-Python/" class="post-title-link" itemprop="url">Python List</a>
         </h2>
 
         <div class="post-meta-container">
@@ -222,10 +377,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-01-28 21:13:31 / Modified: 21:17:46" itemprop="dateCreated datePublished" datetime="2021-01-28T21:13:31+09:00">2021-01-28</time>
+      <time title="Created: 2021-01-28 21:13:31" itemprop="dateCreated datePublished" datetime="2021-01-28T21:13:31+09:00">2021-01-28</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-02-07 10:42:13" itemprop="dateModified" datetime="2021-02-07T10:42:13+09:00">2021-02-07</time>
+      </span>
 
   
 </div>
@@ -294,10 +455,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-01-27 12:13:20 / Modified: 12:14:51" itemprop="dateCreated datePublished" datetime="2021-01-27T12:13:20+09:00">2021-01-27</time>
+      <time title="Created: 2021-01-27 12:13:20" itemprop="dateCreated datePublished" datetime="2021-01-27T12:13:20+09:00">2021-01-27</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-02-07 10:43:30" itemprop="dateModified" datetime="2021-02-07T10:43:30+09:00">2021-02-07</time>
+      </span>
 
   
 </div>
@@ -409,7 +576,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/27/Python-First/" class="post-title-link" itemprop="url">Untitled</a>
+          <a href="/2021/01/27/Python-First/" class="post-title-link" itemprop="url">Python First</a>
         </h2>
 
         <div class="post-meta-container">
@@ -420,8 +587,15 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-01-27 12:06:02" itemprop="dateCreated datePublished" datetime="2021-01-27T12:06:02+09:00">2021-01-27</time>
+      <time title="Created: 2021-01-27 12:00:28" itemprop="dateCreated datePublished" datetime="2021-01-27T12:00:28+09:00">2021-01-27</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-02-07 10:42:41" itemprop="dateModified" datetime="2021-02-07T10:42:41+09:00">2021-02-07</time>
+      </span>
 
   
 </div>
@@ -433,9 +607,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <hr>
-<p>title: Python First<br>date: 2021-01-27 12:00:28<br>tags:<br>–</p>
-<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="변수와-인수"><a href="#변수와-인수" class="headerlink" title="변수와 인수"></a>변수와 인수</h2><p>def add(a, b) return a + b 에서 a , b 는 변수</p>
+          <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="변수와-인수"><a href="#변수와-인수" class="headerlink" title="변수와 인수"></a>변수와 인수</h2><p>def add(a, b) return a + b 에서 a , b 는 변수</p>
 <p>print(add(3, 4)) 에서 3 , 4 는 인수</p>
 <p>7 &gt; 리턴값(return a + b)</p>
 <p>변수에 넣은 값이 인수 &gt; 위 예제에서는 a , b 변수에 3 , 4 라는 인수가 주어짐</p>
